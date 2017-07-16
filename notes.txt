@@ -1,0 +1,33 @@
+GrooveFiddle
+    a project. keeps track of which grooves map to which url
+    fields:
+    - url string
+
+Groove
+    a saved track
+    fields:
+    - bpm
+    - time signature
+    - tracks - json blob - [Track]
+
+Track
+(not a db table, stored in json in tracks)
+    attributes:
+    - instrument - string
+    - pattern - [boolean]
+
+files
+
+frontend/
+    index.js
+
+app.js
+    express init
+    web sockets init
+    add event handlers
+
+eventHandlers.js
+    handles incoming messages from websocket connection
+
+models.js
+
